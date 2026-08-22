@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>김성민 · 생산 · 공정 관리</title>
-<meta name="description" content="기계공학 전공, 품질·환경·안전보건 경영시스템 교육 수강 중. 생산·공정 관리 직무 지원자 김성민입니다.">
+<title>김성민 · 생산 &amp; 공정 관리</title>
+<meta name="description" content="기계공학 전공. ISO 9001 인증심사원 자격 취득, ISO 14001·45001 통합 내부심사원 과정 및 6시그마 GB 이수. ANSYS 진동 해석 경험. 생산 및 공정 관리 직무 지원자 김성민입니다.">
 <style>
   /* ===== 색: 3가지 (잉크 남색 / 강조 블루 / 배경 오프화이트) ===== */
   :root{
@@ -29,7 +29,6 @@
     overflow-wrap:anywhere;
   }
   img,svg,table{max-width:100%}
-
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
 
   /* ===== 첫 화면 ===== */
@@ -40,42 +39,22 @@
   }
   .eyebrow{
     margin:0 0 10px;
-    font-size:14px;
-    font-weight:700;
-    letter-spacing:.06em;
+    font-size:14px;font-weight:700;letter-spacing:.06em;
     color:var(--accent);
   }
-  h1{
-    margin:0;
-    font-size:34px;
-    line-height:1.25;
-    letter-spacing:-.02em;
-  }
-  .lead{
-    margin:12px 0 0;
-    font-size:18px;
-    line-height:1.6;
-    color:var(--ink-2);
-  }
+  h1{margin:0;font-size:34px;line-height:1.25;letter-spacing:-.02em}
+  .lead{margin:12px 0 0;font-size:18px;line-height:1.6;color:var(--ink-2)}
   .contact{
     margin:22px 0 0;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:8px;
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
     font-size:16px;
   }
   .contact a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(45,95,127,.35)}
   .contact a:hover{border-bottom-color:var(--accent)}
   .copy{
-    font:inherit;
-    font-size:14px;
-    color:var(--ink-2);
-    background:var(--bg);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:3px 9px;
-    cursor:pointer;
+    font:inherit;font-size:14px;color:var(--ink-2);
+    background:var(--bg);border:1px solid var(--line);border-radius:6px;
+    padding:3px 9px;cursor:pointer;
   }
   .copy:hover{color:var(--ink);border-color:#cfcfca}
 
@@ -85,75 +64,48 @@
   section:last-of-type{border-bottom:none}
   h2{
     margin:0 0 18px;
-    font-size:15px;
-    font-weight:700;
-    letter-spacing:.06em;
-    color:var(--ink-3);
-    text-transform:uppercase;
+    font-size:15px;font-weight:700;letter-spacing:.06em;
+    color:var(--ink-3);text-transform:uppercase;
   }
 
   /* 핵심 강점 */
   ul.points{margin:0;padding:0;list-style:none}
   ul.points li{
-    position:relative;
-    padding:0 0 0 26px;
-    margin:0 0 16px;
-    font-size:17px;
-    line-height:1.6;
+    position:relative;padding:0 0 0 26px;margin:0 0 16px;
+    font-size:17px;line-height:1.6;
   }
   ul.points li:last-child{margin-bottom:4px}
   ul.points li::before{
-    content:"";
-    position:absolute;
-    left:4px;top:11px;
-    width:8px;height:8px;
-    border-radius:50%;
-    background:var(--accent);
+    content:"";position:absolute;left:4px;top:11px;
+    width:8px;height:8px;border-radius:50%;background:var(--accent);
   }
   ul.points b{font-weight:700}
 
   /* 이력 항목 */
   .item{margin:0 0 26px}
   .item:last-child{margin-bottom:6px}
-  .period{
-    margin:0 0 3px;
-    font-size:14px;
-    color:var(--ink-3);
-    font-variant-numeric:tabular-nums;
-  }
-  .item h3{
-    margin:0;
-    font-size:18px;
-    line-height:1.45;
-    font-weight:700;
-  }
+  .period{margin:0 0 3px;font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .item h3{margin:0;font-size:18px;line-height:1.45;font-weight:700}
   .org{margin:2px 0 0;font-size:16px;color:var(--ink-2)}
   .item ul{margin:9px 0 0;padding-left:19px}
   .item ul li{margin:3px 0;color:var(--ink-2)}
   .tag{
-    display:inline-block;
-    margin-left:6px;
-    padding:1px 8px;
-    border:1px solid var(--line);
-    border-radius:20px;
-    font-size:13px;
-    font-weight:400;
-    color:var(--ink-3);
-    vertical-align:2px;
-    white-space:nowrap;
+    display:inline-block;margin-left:6px;padding:1px 8px;
+    border:1px solid var(--line);border-radius:20px;
+    font-size:13px;font-weight:400;color:var(--ink-3);
+    vertical-align:2px;white-space:nowrap;
   }
 
-  /* 자격증 */
-  dl.certs{margin:0;display:grid;gap:10px}
-  dl.certs div{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
-  dl.certs dt{font-weight:700}
-  dl.certs dd{margin:0;color:var(--ink-2);font-size:16px}
-
-  footer{
-    padding:22px 0 40px;
-    color:var(--ink-3);
-    font-size:14px;
+  /* 간단 목록 (아르바이트 · 자격증 · 그 외 활동) */
+  ul.rows{margin:0;padding:0;list-style:none}
+  ul.rows > li{
+    margin:0 0 15px;padding:0 0 0 0;
   }
+  ul.rows > li:last-child{margin-bottom:5px}
+  ul.rows .t{font-weight:700}
+  ul.rows .d{color:var(--ink-2)}
+
+  footer{padding:22px 0 40px;color:var(--ink-3);font-size:14px}
 
   /* ===== 넓은 화면 ===== */
   @media (min-width:700px){
@@ -178,9 +130,9 @@
 <!-- ===== 첫 화면: 이름 · 한 줄 소개 · 지원 직무 ===== -->
 <header class="hero">
   <div class="wrap">
-    <p class="eyebrow">생산 · 공정 관리</p>
+    <p class="eyebrow">생산 &amp; 공정 관리</p>
     <h1>김성민</h1>
-    <p class="lead">기계공학을 전공하고, 품질·환경·안전보건 3대 표준을 배우고 있습니다.</p>
+    <p class="lead">기계공학을 전공하고, ISO 9001 인증심사원 자격을 취득했습니다.</p>
     <p class="contact">
       <a href="mailto:saemz1821@naver.com">saemz1821@naver.com</a>
       <button class="copy" id="copyBtn" type="button">주소 복사</button>
@@ -194,9 +146,9 @@
   <section>
     <h2>핵심 강점</h2>
     <ul class="points">
-      <li><b>기계공학 전공.</b> 캡스톤 디자인에서 자동차 진동을 분석해 취약 부위를 찾고 보강·개선까지 수행했습니다.</li>
-      <li><b>ISO 9001·14001·45001 교육 523시간 과정 수강 중.</b> 품질·환경·안전보건 경영시스템을 한국품질재단 과정에서 함께 배우고 있습니다.</li>
-      <li><b>재고·서류·물품 관리 실무 18개월.</b> 교내 근로장학생 7개월, 매장 근무 11개월 동안 물품과 기록을 정해진 기준에 맞춰 관리했습니다.</li>
+      <li><b>ISO 9001 인증심사원 자격을 취득했습니다.</b> ISO 14001·45001 통합 내부심사원 과정과 6시그마 GB 과정도 이수했습니다. 한국품질재단 523시간 과정으로, 2026년 11월 수료 예정입니다.</li>
+      <li><b>전공 설계 과목 3개를 모두 팀장으로 수행했습니다.</b> 졸업과제에서는 ANSYS Harmonic Response로 주파수 응답을 해석하고 엔진 오일팬을 보강해, 공진 주파수를 945Hz에서 1122Hz로 올려 목표치 1100Hz를 넘겼습니다. 앞선 두 과목에서는 골판지 거더교 하중 실험(4인)과 핸드폰 거치대 형상 재설계(4인)를 맡았습니다.</li>
+      <li><b>담당 범위를 숫자로 관리했습니다.</b> 대교 러닝센터에서 담당 회원 50명 전체를 맡아 3개월간 과목 수 100개 이상을 유지했고, 생활관 자치회 복지국장으로는 공동시설 2개소를 주 1회 점검하며 소모품을 관리하고, 학기당 2회·600개 규모의 간식 사업을 운영했습니다.</li>
     </ul>
   </section>
 
@@ -218,9 +170,10 @@
       <h3>초광역 MEGA-AX 핵심인재양성 <span class="tag">수강 중</span></h3>
       <p class="org">한국품질재단</p>
       <ul>
-        <li>ISO 9001 품질경영시스템</li>
-        <li>ISO 14001 환경경영시스템</li>
-        <li>ISO 45001 안전보건경영시스템</li>
+        <li><b>ISO 9001 인증심사원 과정</b> — 자격 취득</li>
+        <li><b>ISO 14001 · ISO 45001 통합 내부심사원 과정</b> — 이수</li>
+        <li><b>6시그마 GB 과정</b> — 이수</li>
+        <li>3정 5S 실무</li>
       </ul>
     </div>
   </section>
@@ -228,62 +181,137 @@
   <!-- ===== 프로젝트 ===== -->
   <section>
     <h2>프로젝트</h2>
+
     <div class="item">
       <p class="period">2023.09 – 2024.06 · 10개월</p>
-      <h3>캡스톤 디자인 <span class="tag">팀장</span></h3>
-      <p class="org">영남대학교 기계공학부</p>
+      <h3>캡스톤디자인 — 엔진 오일팬 진동 보강 설계 <span class="tag">팀장 · 6인</span></h3>
+      <p class="org">졸업과제</p>
       <ul>
-        <li>자동차의 진동을 분석해 취약 부분을 찾아내고, 해당 부위를 보강·개선했습니다.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== 경험 ===== -->
-  <section>
-    <h2>경험</h2>
-
-    <div class="item">
-      <p class="period">2023.09 – 2024.03 · 7개월</p>
-      <h3>행정팀 <span class="tag">근로장학생</span></h3>
-      <p class="org">영남대학교 박물관</p>
-      <ul>
-        <li>유물 관리 및 서적 정리</li>
-        <li>서류 분류 및 보관</li>
-        <li>관람객 대상 도슨트 진행</li>
-      </ul>
-    </div>
-
-    <div class="item">
-      <p class="period">2021.10 – 2022.03 · 6개월</p>
-      <h3>버거 조립 <span class="tag">주말 11시간</span></h3>
-      <p class="org">버거킹 마산내서점</p>
-      <ul>
-        <li>재고 관리 및 매장 청결 유지</li>
+        <li>선정한 형상의 공진 주파수는 945Hz였고, 목표 주파수를 1100Hz로 설정했습니다.</li>
+        <li>ANSYS의 Harmonic Response 해석으로 주파수 응답 함수를 구해 공진 지점을 확인했습니다.</li>
+        <li>오일팬 상부에 핀 4개를 가로로 배치하고, 높이가 낮은 쪽 뒷면과 아래에 교각을 설치해 보강했습니다.</li>
+        <li>결과 — 공진 주파수 <b>945Hz → 1122Hz</b>로 목표치를 넘겼고, 질량은 <b>523g → 660g</b>(26% 증가)였습니다. 공진을 벗어나 진동과 소음을 줄였습니다.</li>
       </ul>
     </div>
 
     <div class="item">
       <p class="period">2021.03 – 2021.06 · 4개월</p>
-      <h3>행정팀 <span class="tag">교내 인턴</span></h3>
-      <p class="org">영남대학교 중앙기기센터</p>
+      <h3>공학설계 <span class="tag">팀장 · 4인</span></h3>
+      <p class="org">전공필수 교과목</p>
+      <ul>
+        <li>기존 핸드폰 거치대의 형상을 타워크레인 형태로 재설계했습니다.</li>
+      </ul>
     </div>
 
     <div class="item">
-      <p class="period">2019.05 – 2019.09 · 5개월</p>
-      <h3>카운터 · 상품 진열 <span class="tag">주 3일 15시간</span></h3>
-      <p class="org">세븐일레븐 경북대병원점</p>
+      <p class="period">2019.03 – 2019.06 · 4개월</p>
+      <h3>창의설계입문 <span class="tag">팀장 · 4인</span></h3>
+      <p class="org">전공필수 교과목</p>
+      <ul>
+        <li>골판지로 거더교를 설계하고, 얼마나 무거운 하중을 견디는지 실험했습니다.</li>
+      </ul>
     </div>
+  </section>
+
+  <!-- ===== 경력 ===== -->
+  <section>
+    <h2>경력</h2>
+
+    <div class="item">
+      <p class="period">2025.04 – 2026.01 · 10개월</p>
+      <h3>러닝센터 교사 <span class="tag">계약직</span></h3>
+      <p class="org">주식회사 대교</p>
+      <ul>
+        <li>국어 교사로 담당 회원 50명 전체를 관리했습니다.</li>
+        <li>3개월간 담당 과목 수를 100개 이상으로 유지했습니다.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="period">2023.09 – 2024.03 · 7개월</p>
+      <h3>학예연구실 도슨트 <span class="tag">근로장학</span></h3>
+      <p class="org">영남대학교 박물관</p>
+      <ul>
+        <li>인근 중학교·고등학교 방문 시 박물관 투어를 담당했습니다.</li>
+        <li>유물 관리 및 서적 정리</li>
+        <li>서류 분류 및 보관</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="period">2022.03 – 2022.08 · 6개월</p>
+      <h3>복지국 국장 <span class="tag">교내장학</span></h3>
+      <p class="org">영남대학교 생활관 자치회</p>
+      <ul>
+        <li>생활관 공동시설 2개소(헬스장, 탁구장) 관리 — <b>주 1회 정기 점검</b> 및 소모품 교체</li>
+        <li>소모품 관리 품목 — 농구공, 볼 펌프, 탁구채, 탁구공, 배드민턴 채</li>
+        <li>간식 사업 진행 — 학기당 2회, 회당 600개 규모</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <p class="period">2021.03 – 2021.06 · 4개월</p>
+      <h3>행정팀 <span class="tag">교내근로</span></h3>
+      <p class="org">영남대학교 중앙기기센터</p>
+      <ul>
+        <li>분석 장비 예약 접수</li>
+        <li>시료 관리</li>
+        <li>측정 데이터 정리</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 아르바이트 ===== -->
+  <section>
+    <h2>아르바이트</h2>
+    <ul class="rows">
+      <li>
+        <span class="t">영남대학교 생활관 식당</span> · 설거지 보조<br>
+        <span class="d">2022.03 – 2022.06 · 4개월 · 주 5일 10시간</span>
+      </li>
+      <li>
+        <span class="t">버거킹 마산내서점</span> · 버거 조립<br>
+        <span class="d">2021.09 – 2022.01 · 5개월 · 주말 11시간 · 재고 관리 및 매장 청결 유지</span>
+      </li>
+      <li>
+        <span class="t">세븐일레븐 경북대병원점</span> · 카운터<br>
+        <span class="d">2019.05 – 2019.08 · 4개월 · 주 3일 15시간 · 카운터, 물품 상하차, 상품 진열</span>
+      </li>
+    </ul>
   </section>
 
   <!-- ===== 자격증 ===== -->
   <section>
     <h2>자격증</h2>
-    <dl class="certs">
-      <div>
-        <dt>자동차 운전면허 2종 보통</dt>
-        <dd>2022.08 취득</dd>
-      </div>
-    </dl>
+    <ul class="rows">
+      <li>
+        <span class="t">ISO 9001 인증심사원 과정 자격</span><br>
+        <span class="d">2026.07 취득 · 한국품질재단 과정</span>
+      </li>
+      <li>
+        <span class="t">자동차운전면허 2종 보통</span><br>
+        <span class="d">2022.08 취득</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== 그 외 활동 ===== -->
+  <section>
+    <h2>그 외 활동</h2>
+    <ul class="rows">
+      <li>
+        <span class="t">국토대장정</span> 참가<br>
+        <span class="d">2024.08</span>
+      </li>
+      <li>
+        <span class="t">영남대학교 산악회</span> 팀원<br>
+        <span class="d">2021.12 – 2022.03 · 대구·경북 산악연맹 동계 등반, 대학 자체 동계 등반 참가</span>
+      </li>
+      <li>
+        <span class="t">교내 축구대회</span> 참가<br>
+        <span class="d">2019.03 – 2024.08</span>
+      </li>
+    </ul>
   </section>
 
   <!-- ===== 연락처 ===== -->
@@ -309,12 +337,7 @@
       btn.textContent = "복사했습니다";
       setTimeout(function(){ btn.textContent = "주소 복사"; }, 1800);
     };
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(mail).then(done, fallback);
-    }else{
-      fallback();
-    }
-    function fallback(){
+    var fallback = function(){
       var t = document.createElement("textarea");
       t.value = mail;
       t.setAttribute("readonly","");
@@ -323,8 +346,16 @@
       document.body.appendChild(t);
       t.select();
       try{ document.execCommand("copy"); done(); }
-      catch(e){ btn.textContent = "복사 실패"; setTimeout(function(){ btn.textContent = "주소 복사"; }, 1800); }
+      catch(e){
+        btn.textContent = "복사 실패";
+        setTimeout(function(){ btn.textContent = "주소 복사"; }, 1800);
+      }
       document.body.removeChild(t);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(mail).then(done, fallback);
+    }else{
+      fallback();
     }
   });
 })();
