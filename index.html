@@ -6,7 +6,6 @@
 <title>김성민 · 생산 &amp; 공정 관리</title>
 <meta name="description" content="기계공학 전공. ISO 9001 인증심사원 자격 취득, ISO 14001·45001 통합 내부심사원 과정 및 6시그마 GB 이수. ANSYS 진동 해석 경험. 생산 및 공정 관리 직무 지원자 김성민입니다.">
 <style>
-  /* ===== 색: 3가지 (잉크 남색 / 강조 블루 / 배경 오프화이트) ===== */
   :root{
     --ink:#1b2430;
     --ink-2:#4a5563;
@@ -15,6 +14,8 @@
     --bg:#f6f6f4;
     --card:#ffffff;
     --line:#e3e3df;
+    /* 굵은 글씨 = 파랑 */
+    --blue:#1a56b0;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -28,7 +29,7 @@
     word-break:keep-all;
     overflow-wrap:anywhere;
   }
-  img,svg,table{max-width:100%}
+  img,svg{max-width:100%}
   .wrap{max-width:720px;margin:0 auto;padding:0 20px}
 
   /* ===== 첫 화면 ===== */
@@ -42,7 +43,10 @@
     font-size:14px;font-weight:700;letter-spacing:.06em;
     color:var(--accent);
   }
-  h1{margin:0;font-size:34px;line-height:1.25;letter-spacing:-.02em}
+  h1{
+    margin:0;
+    font-size:34px;line-height:1.25;letter-spacing:-.02em;
+  }
   .lead{margin:12px 0 0;font-size:18px;line-height:1.6;color:var(--ink-2)}
   .contact{
     margin:22px 0 0;
@@ -60,18 +64,21 @@
 
   /* ===== 섹션 ===== */
   main{padding:8px 0 56px}
-  section{padding:30px 0 4px;border-bottom:1px solid var(--line)}
+  section{padding:32px 0 6px;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:none}
   h2{
     margin:0 0 18px;
-    font-size:15px;font-weight:700;letter-spacing:.06em;
-    color:var(--ink-3);text-transform:uppercase;
+    font-size:19px;font-weight:700;letter-spacing:-.01em;
+    color:var(--ink);
   }
+  /* 굵은 글씨 = 파랑 */
+  b,strong{color:var(--blue)}
+  ul.rows .t{color:var(--blue)}
 
   /* 핵심 강점 */
   ul.points{margin:0;padding:0;list-style:none}
   ul.points li{
-    position:relative;padding:0 0 0 26px;margin:0 0 16px;
+    position:relative;padding:0 0 0 26px;margin:0 0 18px;
     font-size:17px;line-height:1.6;
   }
   ul.points li:last-child{margin-bottom:4px}
@@ -82,7 +89,7 @@
   ul.points b{font-weight:700}
 
   /* 이력 항목 */
-  .item{margin:0 0 26px}
+  .item{margin:0 0 28px}
   .item:last-child{margin-bottom:6px}
   .period{margin:0 0 3px;font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
   .item h3{margin:0;font-size:18px;line-height:1.45;font-weight:700}
@@ -96,11 +103,9 @@
     vertical-align:2px;white-space:nowrap;
   }
 
-  /* 간단 목록 (아르바이트 · 자격증 · 그 외 활동) */
+  /* 간단 목록 */
   ul.rows{margin:0;padding:0;list-style:none}
-  ul.rows > li{
-    margin:0 0 15px;padding:0 0 0 0;
-  }
+  ul.rows > li{margin:0 0 16px}
   ul.rows > li:last-child{margin-bottom:5px}
   ul.rows .t{font-weight:700}
   ul.rows .d{color:var(--ink-2)}
@@ -112,7 +117,8 @@
     header.hero{padding:64px 0 48px}
     h1{font-size:42px}
     .lead{font-size:20px}
-    section{padding:38px 0 6px}
+    section{padding:40px 0 8px}
+    h2{font-size:21px}
   }
 
   /* ===== 인쇄 ===== */
@@ -122,6 +128,7 @@
     .copy{display:none}
     section{page-break-inside:avoid;border-bottom:none;padding:16px 0 0}
     .wrap{max-width:none;padding:0}
+    h2{font-size:14pt;margin-bottom:10px}
   }
 </style>
 </head>
@@ -142,8 +149,8 @@
 
 <main class="wrap">
 
-  <!-- ===== 핵심 강점 ===== -->
-  <section>
+  <!-- 핵심 강점 -->
+  <section id="strengths">
     <h2>핵심 강점</h2>
     <ul class="points">
       <li><b>ISO 9001 인증심사원 자격을 취득했습니다.</b> ISO 14001·45001 통합 내부심사원 과정과 6시그마 GB 과정도 이수했습니다. 한국품질재단 523시간 과정으로, 2026년 11월 수료 예정입니다.</li>
@@ -152,8 +159,8 @@
     </ul>
   </section>
 
-  <!-- ===== 학력 ===== -->
-  <section>
+  <!-- 학력 -->
+  <section id="education">
     <h2>학력</h2>
     <div class="item">
       <p class="period">2019.03 – 2024.08</p>
@@ -162,8 +169,8 @@
     </div>
   </section>
 
-  <!-- ===== 직무 교육 ===== -->
-  <section>
+  <!-- 직무 교육 -->
+  <section id="training">
     <h2>직무 교육</h2>
     <div class="item">
       <p class="period">2026.06 – 2026.11 · 총 523시간</p>
@@ -178,8 +185,8 @@
     </div>
   </section>
 
-  <!-- ===== 프로젝트 ===== -->
-  <section>
+  <!-- 프로젝트 -->
+  <section id="projects">
     <h2>프로젝트</h2>
 
     <div class="item">
@@ -213,8 +220,8 @@
     </div>
   </section>
 
-  <!-- ===== 경력 ===== -->
-  <section>
+  <!-- 경력 -->
+  <section id="career">
     <h2>경력</h2>
 
     <div class="item">
@@ -261,8 +268,8 @@
     </div>
   </section>
 
-  <!-- ===== 아르바이트 ===== -->
-  <section>
+  <!-- 아르바이트 -->
+  <section id="parttime">
     <h2>아르바이트</h2>
     <ul class="rows">
       <li>
@@ -280,8 +287,8 @@
     </ul>
   </section>
 
-  <!-- ===== 자격증 ===== -->
-  <section>
+  <!-- 자격증 -->
+  <section id="certs">
     <h2>자격증</h2>
     <ul class="rows">
       <li>
@@ -295,8 +302,8 @@
     </ul>
   </section>
 
-  <!-- ===== 그 외 활동 ===== -->
-  <section>
+  <!-- 그 외 활동 -->
+  <section id="activities">
     <h2>그 외 활동</h2>
     <ul class="rows">
       <li>
@@ -314,12 +321,15 @@
     </ul>
   </section>
 
-  <!-- ===== 연락처 ===== -->
-  <section>
+  <!-- 연락처 -->
+  <section id="contact">
     <h2>연락처</h2>
-    <p style="margin:0 0 4px">
-      이메일 <a href="mailto:saemz1821@naver.com" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(45,95,127,.35)">saemz1821@naver.com</a>
-    </p>
+    <ul class="rows">
+      <li>
+        <span class="t">이메일</span><br>
+        <span class="d"><a href="mailto:saemz1821@naver.com" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(45,95,127,.35)">saemz1821@naver.com</a></span>
+      </li>
+    </ul>
   </section>
 
 </main>
