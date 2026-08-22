@@ -14,7 +14,9 @@
     --bg:#f6f6f4;
     --card:#ffffff;
     --line:#e3e3df;
-    /* 굵은 글씨 = 파랑 */
+    /* 요청 색: 이름=초록 / 핵심 강점=빨강 / 굵은 글씨=파랑 */
+    --green:#1f7a4d;
+    --red:#b3261e;
     --blue:#1a56b0;
   }
   *{box-sizing:border-box}
@@ -46,6 +48,7 @@
   h1{
     margin:0;
     font-size:34px;line-height:1.25;letter-spacing:-.02em;
+    color:var(--green);           /* 이름 = 초록 */
   }
   .lead{margin:12px 0 0;font-size:18px;line-height:1.6;color:var(--ink-2)}
   .contact{
@@ -71,10 +74,12 @@
     font-size:19px;font-weight:700;letter-spacing:-.01em;
     color:var(--ink);
   }
+  /* 핵심 강점 = 빨강 */
+  #strengths h2{color:var(--red)}
+  #strengths ul.points li::before{background:var(--red)}
+
   /* 굵은 글씨 = 파랑 */
   b,strong{color:var(--blue)}
-  /* 단, 핵심 강점의 굵은 글씨는 검정 */
-  #strengths ul.points b{color:var(--ink)}
   ul.rows .t{color:var(--blue)}
 
   /* 핵심 강점 */
@@ -157,7 +162,6 @@
     <ul class="points">
       <li><b>ISO 9001 인증심사원 자격을 취득했습니다.</b> ISO 14001·45001 통합 내부심사원 과정과 6시그마 GB 과정도 이수했습니다. 한국품질재단 523시간 과정으로, 2026년 11월 수료 예정입니다.</li>
       <li><b>전공 설계 과목 3개를 모두 팀장으로 수행했습니다.</b> 졸업과제에서는 ANSYS Harmonic Response로 주파수 응답을 해석하고 엔진 오일팬을 보강해, 공진 주파수를 945Hz에서 1122Hz로 올려 목표치 1100Hz를 넘겼습니다. 앞선 두 과목에서는 골판지 거더교 하중 실험(4인)과 핸드폰 거치대 형상 재설계(4인)를 맡았습니다.</li>
-      <li><b>제조 현장 조립 공정을 경험했습니다.</b> 철도차량 조립 라인에서 엔진·모터·배관 조립과 볼트·너트 체결, 강관 분류를 맡았습니다. 2022년 7월, 1개월간 근무했습니다.</li>
       <li><b>담당 범위를 숫자로 관리했습니다.</b> 대교 러닝센터에서 담당 회원 50명 전체를 맡아 3개월간 과목 수 100개 이상을 유지했고, 생활관 자치회 복지국장으로는 공동시설 2개소를 주 1회 점검하며 소모품을 관리하고, 학기당 2회·600개 규모의 간식 사업을 운영했습니다.</li>
     </ul>
   </section>
@@ -245,17 +249,6 @@
         <li>인근 중학교·고등학교 방문 시 박물관 투어를 담당했습니다.</li>
         <li>유물 관리 및 서적 정리</li>
         <li>서류 분류 및 보관</li>
-      </ul>
-    </div>
-
-    <div class="item">
-      <p class="period">2022.07 · 1개월 · 주간 08:00–17:00</p>
-      <h3>철도차량 조립 공정 <span class="tag">생산직</span></h3>
-      <p class="org">성신RST</p>
-      <ul>
-        <li>엔진 · 모터 · 배관 조립</li>
-        <li>몽키스패너를 사용한 볼트 · 너트 체결</li>
-        <li>강관 분류</li>
       </ul>
     </div>
 
